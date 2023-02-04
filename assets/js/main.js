@@ -21,7 +21,7 @@ function LogIn() {
       password == loginCred[i].password
     ) {
       window.alert("Login Successfully. Welcome " + loginCred[i].name);
-      window.open("dashboard.html", "_self");
+      window.open("todo.html", "_self");
       return;
     }
   }
