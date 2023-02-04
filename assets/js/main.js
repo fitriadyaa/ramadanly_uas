@@ -5,9 +5,9 @@ var loginCred = [
     name: "Administrator",
   },
   {
-    username: "rifky",
-    password: "rifky",
-    name: "Rifky Abdul Hanan",
+    username: "fitria",
+    password: "fitria",
+    name: "Fitria Widyani",
   },
 ];
 
