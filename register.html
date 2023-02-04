@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn with Fi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <div class="container h-100"><br>
+        <div class="header-4-2 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="./assets/logo.png" alt="" style="width: 4%;">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal"
+                    data-bs-target="#targetModal-item">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="gap-3">
+                        <a href="login.html" class="btn btn-default btn-no-fill" role="button">Log In</a>
+                        <button class="btn btn-fill text-white">Try Now</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="card shadow-lg">
+            <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4">Register as Learner</h1>
+                <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                    <div class="mb-3">
+                        <label class="mb-2 text-muted" for="email">Name</label>
+                        <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+                        <div class="invalid-feedback">
+                            Name is invalid
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="mb-2 text-muted" for="email">Email</label>
+                        <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                        <div class="invalid-feedback">
+                            Email is invalid
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="mb-2 w-100">
+                            <label class="text-muted" for="password">Password</label>
+
+                        </div>
+                        <input id="password" type="password" class="form-control" name="password" required>
+                        <div class="invalid-feedback">
+                            Password is required
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-2 w-100">
+                            <label class="text-muted" for="password">Confirm Password</label>
+
+                        </div>
+                        <input id="password2" type="password" class="form-control" name="password2" required>
+                        <div class="invalid-feedback">
+                            Password is required
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="form-check">
+                            <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                            <label for="remember" class="form-check-label">Remember Me</label>
+                        </div>
+                        <a href="./dashboard.html" style="background-color: #27c499;"
+                            class="btn btn-fill text-white ms-auto">Register</a>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer py-3 border-0">
+                <div class="text-center">
+                    Have an account? <a href="login.html" style="color: #27c499 ;">Login Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
