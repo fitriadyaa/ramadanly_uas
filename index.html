@@ -2,405 +2,410 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ramadan Diary</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramadan Diary</title>
+    <style media="screen">
+        body {
+            background: #ECEFF1;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        #message {
+            background: white;
+            max-width: 360px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+        }
 
-  <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+        #message h2 {
+            color: #ffa100;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
 
-    #message {
-      background: white;
-      max-width: 360px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
 
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
+        #message p {
+            line-height: 140%;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
 
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
+        #message a {
+            display: block;
+            text-align: center;
+            background: #039be5;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            padding: 16px;
+            border-radius: 4px;
+        }
 
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
+        #message,
+        #message a {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
 
-    #message a {
-      display: block;
-      text-align: center;
-      background: #039be5;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      padding: 16px;
-      border-radius: 4px;
-    }
+        #load {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
 
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
+        @media (max-width: 600px) {
 
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
+            body,
+            #message {
+                margin-top: 0;
+                background: white;
+                box-shadow: none;
+            }
 
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-  </style>
+            body {
+                border-top: 16px solid #ffa100;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <section class="header">
+    <section class="header">
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-      * {
-        font-family: 'Inter', sans-serif !important;
-      }
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
 
-      body .header {
-        background: #08090D;
-      }
+            body .header {
+                background: #08090D;
+            }
 
-      body .header .content {
-        padding-top: 80px;
-        padding-bottom: 80px;
-      }
+            body .header .content {
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
 
-      body .header .content .headline {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 59px;
-        color: #FFFFFF;
-      }
+            body .header .content .headline {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 59px;
+                color: #FFFFFF;
+            }
 
-      body .header .content .subheadline {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 28px;
-        color: #FFFFFF;
-      }
+            body .header .content .subheadline {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
 
-      body .header .content .button-header {
-        margin-top: 30px;
-      }
+            body .header .content .button-header {
+                margin-top: 30px;
+            }
 
-      body .header .content .button-header .btn-started {
-        background: #0DDB93;
-        border-radius: 8px;
-        width: 150px;
-        height: 50px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: center;
-        color: #001D01;
-      }
+            body .header .content .button-header .btn-started {
+                background: #0DDB93;
+                border-radius: 8px;
+                width: 150px;
+                height: 50px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                color: #001D01;
+            }
 
-      body .header .content .button-header .btn-watch {
-        background: transparent;
-        border-radius: 8px;
-        width: 150px;
-        height: 50px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: center;
-        -webkit-text-decoration-line: underline;
-        text-decoration-line: underline;
-        color: #939EA3;
-      }
+            body .header .content .button-header .btn-watch {
+                background: transparent;
+                border-radius: 8px;
+                width: 150px;
+                height: 50px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+                color: #939EA3;
+            }
 
-      @media screen and (min-width: 768px) {
-        body .header nav {
-          padding-top: 30px;
-        }
-      }
+            @media screen and (min-width: 768px) {
+                body .header nav {
+                    padding-top: 30px;
+                }
+            }
 
-      body .header nav .navbar-brand {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 26px;
-        color: #FFFFFF;
-        margin-right: 30px !important;
-      }
+            body .header nav .navbar-brand {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 26px;
+                color: #FFFFFF;
+                margin-right: 30px !important;
+            }
 
-      @media screen and (min-width: 768px) {
-        body .header nav .navigation {
-          padding-left: 30px;
-          border-left: 1px solid #304454;
-        }
-      }
+            @media screen and (min-width: 768px) {
+                body .header nav .navigation {
+                    padding-left: 30px;
+                    border-left: 1px solid #304454;
+                }
+            }
 
-      body .header nav .navigation li {
-        margin-right: 24px;
-      }
+            body .header nav .navigation li {
+                margin-right: 24px;
+            }
 
-      body .header nav .navigation a {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        color: #FFFFFF !important;
-      }
+            body .header nav .navigation a {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                color: #FFFFFF !important;
+            }
 
-      body .header nav .authentication li {
-        margin-right: 22px;
-      }
+            body .header nav .authentication li {
+                margin-right: 22px;
+            }
 
-      body .header nav .authentication a {
-        font-size: 16px;
-      }
+            body .header nav .authentication a {
+                font-size: 16px;
+            }
 
-      @media screen and (max-width: 768px) {
-        body .header nav .authentication .login {
-          width: 100%;
-        }
-      }
+            @media screen and (max-width: 768px) {
+                body .header nav .authentication .login {
+                    width: 100%;
+                }
+            }
 
-      body .header nav .authentication .login a {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        color: #FFFFFF;
-      }
+            body .header nav .authentication .login a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
 
-      @media screen and (max-width: 768px) {
-        body .header nav .authentication .login a {
-          background: #518CFF;
-          border-radius: 8px;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          color: #FFFFFF !important;
-          padding: 14px 14px 14px 14px !important;
-        }
-      }
+            @media screen and (max-width: 768px) {
+                body .header nav .authentication .login a {
+                    background: #518CFF;
+                    border-radius: 8px;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    color: #FFFFFF !important;
+                    padding: 14px 14px 14px 14px !important;
+                }
+            }
 
-      body .header nav .authentication .signup {
-        background: #FFFFFF;
-        border-radius: 8px;
-        width: 113px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 14px 14px 14px 14px !important;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: center;
-        color: #08090D;
-      }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container px-0">
-        <a class="navbar-brand mr-0" href="#">
-          Ramadanly
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto navigation">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../quran.html">Quran</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Prayer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Qibla</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Diary</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto authentication">
-            <li class="nav-item my-auto text-center login">
-              <a class="nav-link mb-3 mb-md-0" aria-current="page" href="pages/login.html">Sign in</a>
-            </li>
-            <li class="nav-item mr-0 text-center">
-              <a class="nav-link signup" href="pages/register.html">
-                Sign up
-              </a>
-            </li>
-          </ul>
+            body .header nav .authentication .signup {
+                background: #FFFFFF;
+                border-radius: 8px;
+                width: 113px;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding: 14px 14px 14px 14px !important;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                color: #08090D;
+            }
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container px-0">
+                <a class="navbar-brand mr-0" href="#">
+                    Ramadanly
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../quran.html">Quran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Prayer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Qibla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Diary</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto authentication">
+                        <li class="nav-item my-auto text-center login">
+                            <a class="nav-link mb-3 mb-md-0" aria-current="page" href="pages/login.html">Sign in</a>
+                        </li>
+                        <li class="nav-item mr-0 text-center">
+                            <a class="nav-link signup" href="pages/register.html">
+                                Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container px-md-5">
+            <div class="row content">
+                <div class="col-md-5 my-auto">
+                    <div class="headline">
+                        Buat Ramadanmu<br class="d-none d-md-block">
+                        Lebih Bermakna!
+                    </div>
+                    <div class="subheadline mt-4">
+                        Habiskan waktu anda bersama <br class="d-none d-md-block">
+                        Al-Quran selama Ramadan!
+                    </div>
+                    <div class="button-header">
+                        <button class="btn btn-started">Mulai Sekarang</button>
+                        <!-- <button class="btn btn-watch">Watch Stories</button> -->
+                    </div>
+                </div>
+                <div class="col-md-7 mt-5 mt-md-0">
+                    <img src="https://i.pinimg.com/736x/76/53/02/7653028e6b826ca79d364768b14093d6.jpg" alt="header"
+                        class="img-fluid">
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <div class="container px-md-5">
-      <div class="row content">
-        <div class="col-md-5 my-auto">
-          <div class="headline">
-            Buat Ramadanmu<br class="d-none d-md-block">
-            Lebih Bermakna!
-          </div>
-          <div class="subheadline mt-4">
-            Habiskan waktu anda bersama <br class="d-none d-md-block">
-            Al-Quran selama Ramadan!
-          </div>
-          <div class="button-header">
-            <button class="btn btn-started">Mulai Sekarang</button>
-            <!-- <button class="btn btn-watch">Watch Stories</button> -->
-          </div>
-        </div>
-        <div class="col-md-7 mt-5 mt-md-0">
-          <img
-            src="https://i.pinimg.com/736x/76/53/02/7653028e6b826ca79d364768b14093d6.jpg"
-            alt="header" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section><!-- START: PRODUCTS -->
-  <section class="products position-relative overflow-hidden">
-    <style scoped>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+    </section><!-- START: PRODUCTS -->
+    <section class="products position-relative overflow-hidden">
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-      * {
-        font-family: 'Poppins', 'Inter', sans-serif !important;
-      }
+            * {
+                font-family: 'Poppins', 'Inter', sans-serif !important;
+            }
 
-      body .right-circle img {
-        z-index: 0;
-        margin-top: -250px;
-        position: absolute;
-      }
+            body .right-circle img {
+                z-index: 0;
+                margin-top: -250px;
+                position: absolute;
+            }
 
-      body .porto {
-        background-color: #000909;
-        padding: 50px 30px;
-      }
+            body .porto {
+                background-color: #000909;
+                padding: 50px 30px;
+            }
 
-      @media only screen and (min-width: 768px) {
-        body .porto {
-          padding-top: 140px;
-          padding-bottom: 100px;
-        }
-      }
+            @media only screen and (min-width: 768px) {
+                body .porto {
+                    padding-top: 140px;
+                    padding-bottom: 100px;
+                }
+            }
 
-      body .porto .headline {
-        font-size: 40px;
-        font-weight: 600;
-        color: #EEEEEE;
-        z-index: 1;
-      }
+            body .porto .headline {
+                font-size: 40px;
+                font-weight: 600;
+                color: #EEEEEE;
+                z-index: 1;
+            }
 
-      body .porto .link {
-        font-size: 24px;
-        font-weight: 600;
-        color: #EEEEEE;
-        z-index: 1;
-      }
+            body .porto .link {
+                font-size: 24px;
+                font-weight: 600;
+                color: #EEEEEE;
+                z-index: 1;
+            }
 
-      body .porto .sub-headline {
-        padding-top: 28px;
-        font-size: 16px;
-        font-weight: 400;
-        color: #888888;
-        z-index: 1;
-      }
+            body .porto .sub-headline {
+                padding-top: 28px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #888888;
+                z-index: 1;
+            }
 
-      @media only screen and (min-width: 768px) {
-        body .porto .sub-headline {
-          font-size: 24px;
-        }
-      }
+            @media only screen and (min-width: 768px) {
+                body .porto .sub-headline {
+                    font-size: 24px;
+                }
+            }
 
-      body .porto .porto-img {
-        margin-top: 45px;
-      }
+            body .porto .porto-img {
+                margin-top: 45px;
+            }
 
-      body .porto .porto-img div {
-        z-index: 1;
-      }
+            body .porto .porto-img div {
+                z-index: 1;
+            }
 
-      @media only screen and (min-width: 768px) {
-        body .porto .porto-img {
-          margin-top: 96px;
-        }
-      }
+            @media only screen and (min-width: 768px) {
+                body .porto .porto-img {
+                    margin-top: 96px;
+                }
+            }
 
-      body .porto .porto-img-full {
-        z-index: 1;
-      }
+            body .porto .porto-img-full {
+                z-index: 1;
+            }
 
-      @media only screen and (max-width: 768px) {
-        body .porto .porto-img-full {
-          width: 100px !important;
-        }
-      }
+            @media only screen and (max-width: 768px) {
+                body .porto .porto-img-full {
+                    width: 100px !important;
+                }
+            }
 
-      body .porto .porto-img-half {
-        z-index: 1;
-      }
+            body .porto .porto-img-half {
+                z-index: 1;
+            }
 
-      @media only screen and (max-width: 768px) {
-        body .porto .porto-img-half {
-          height: 70px !important;
-        }
-      }
+            @media only screen and (max-width: 768px) {
+                body .porto .porto-img-half {
+                    height: 70px !important;
+                }
+            }
 
-      body .cl-light {
-        color: #EEEEEE;
-      }
+            body .cl-light {
+                color: #EEEEEE;
+            }
 
-      body .cl-light-grey-2 {
-        color: #90BCB7;
-      }
+            body .cl-light-grey-2 {
+                color: #90BCB7;
+            }
 
-      body .font-lora {
-        font-family: 'Lora', sans-serif !important;
-      }
-    </style>
-    <section class="right-circle">
-      <div class="d-flex justify-content-end">
-        <img
-          src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Right-Circle.png"
-          alt="circle" />
-      </div>
-    </section>
+            body .font-lora {
+                font-family: 'Lora', sans-serif !important;
+            }
+        </style>
+        <section class="right-circle">
+            <div class="d-flex justify-content-end">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Right-Circle.png"
+                    alt="circle" />
+            </div>
+        </section>
 
-    <!-- <section class="porto">
+
+        <!-- <div class="container"> -->
+        <!--  <div class="item">
+            <input type="text" class="item_input"  disabled>
+            <button class = "editButton">Edit</button>
+            <button class="removeButton">Remove</button>
+        </div> -->
+        <!-- </div> -->
+        <!-- <section class="porto">
       <div class="row d-flex align-items-center">
         <div class="col-md-10">
           <h4 class="headline">
@@ -416,7 +421,7 @@
           </p>
         </div>
       </div> -->
-      <!-- <div class="d-flex align-items-center justify-content-center gap-4 porto-img">
+        <!-- <div class="d-flex align-items-center justify-content-center gap-4 porto-img">
         <div>
           <img src="https://unblast.com/wp-content/uploads/2020/04/Ramadan-Kareem-Vector-Illustration.jpg"
             class="img-fluid" style="size: 30;"/>
@@ -433,121 +438,117 @@
         </div>
       </div>
     </section> -->
-  </section>
-  <!-- END: PRODUCTS -->
-  <footer class="page-footer font-small blue">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"></script>
+    </section>
+    <!-- END: PRODUCTS -->
+    <footer class="page-footer font-small blue">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
 
-      * {
-        font-family: 'Inter', sans-serif !important;
-      }
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
 
-      body .font-red-hat-display {
-        font-family: 'Red Hat Display', sans-serif !important;
-      }
+            body .font-red-hat-display {
+                font-family: 'Red Hat Display', sans-serif !important;
+            }
 
-      body footer {
-        background: #313E60;
-        padding-top: 50px;
-        padding-bottom: 70px;
-      }
+            body footer {
+                background: #313E60;
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
 
-      body footer {
-        background: #0F0F0F;
-        padding-top: 50px;
-        padding-bottom: 70px;
-      }
+            body footer {
+                background: #0F0F0F;
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
 
-      body footer .logo {
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 38px;
-        color: #FAFAFD;
-      }
+            body footer .logo {
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 38px;
+                color: #FAFAFD;
+            }
 
-      body footer .social-media {
-        margin-top: 55px;
-      }
+            body footer .social-media {
+                margin-top: 55px;
+            }
 
-      body footer .copyright {
-        font-family: 'Red Hat Display', sans-serif !important;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 135%;
-        color: #FAFAFD;
-        margin-top: 20px;
-      }
+            body footer .copyright {
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #FAFAFD;
+                margin-top: 20px;
+            }
 
-      body footer .nav-footer p {
-        font-weight: 700 !important;
-        font-family: 'Red Hat Display', sans-serif !important;
-        font-size: 20px;
-        line-height: 135%;
-        color: #FAFAFD;
-      }
+            body footer .nav-footer p {
+                font-weight: 700 !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
 
-      body footer .nav-footer a {
-        font-weight: 400 !important;
-        font-family: 'Red Hat Display', sans-serif !important;
-        font-size: 20px;
-        line-height: 135%;
-        color: #FAFAFD;
-      }
+            body footer .nav-footer a {
+                font-weight: 400 !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
 
-      body footer li {
-        margin-bottom: 16px;
-      }
-    </style>
-    <div class="container text-md-left">
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3 address">
-          <div class="logo font-red-hat-display">
-            Ramadanly
-          </div>
-          <div class="social-media">
-            <a href="#">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_linkedin.svg"
-                alt="linkedin" class="img-fluid mr-4">
-            </a>
-            <a href="#">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_facebook.svg"
-                alt="facebook" class="img-fluid mr-4">
-            </a>
-            <a href="#">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_twitter.svg"
-                alt="twitter" class="img-fluid mr-4">
-            </a>
-            <a href="#">
-              <img
-                src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_instagram.svg"
-                alt="twitch" class="img-fluid mr-4">
-            </a>
-          </div>
-          <div class="copyright font-red-hat-display">
-            @Copyrightt	by	21552011043 Fitria Widyani TIF RM 21UASWEB1
-          </div>
+            body footer li {
+                margin-bottom: 16px;
+            }
+        </style>
+        <div class="container text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 address">
+                    <div class="logo font-red-hat-display">
+                        Ramadanly
+                    </div>
+                    <div class="social-media">
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_linkedin.svg"
+                                alt="linkedin" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_facebook.svg"
+                                alt="facebook" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_twitter.svg"
+                                alt="twitter" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_instagram.svg"
+                                alt="twitch" class="img-fluid mr-4">
+                        </a>
+                    </div>
+                    <div class="copyright font-red-hat-display">
+                        @Copyrightt by 21552011043 Fitria Widyani TIF RM 21UASWEB1
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,13 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
 
-    height:100%;
-    background-color: rgb(16, 14, 148);
+    background: #ECEFF1;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -17,15 +16,23 @@ h1{
     font-weight: 50;
     margin:  1rem 0 3rem;
     text-align:center;
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: 'Bebas Neue', cursive;
 
 }
+h4{
+    font-size: 3rem;
+    font-weight: 50;
+    margin:  1rem 0 3rem;
+    text-align:center;
+    color: red;
+    font-family: 'Bebas Neue', cursive;
 
+}
 .heading{
 
     font-weight: 800;
-    color: lime;
+    color: black;
 }
 
 .input_div{
@@ -43,7 +50,7 @@ h1{
     height:50px;
     outline:none;
     border:none;
-    background-color:#ffff;
+    background-color: whitesmoke;
     width:450px;
     font-size:1.15rem;
     margin:0.25rem;
@@ -60,7 +67,7 @@ h1{
     background-color:white;
     color:#fff;
     margin:0.25rem;
-    background-color:lime;
+    background-color:black;
     cursor:pointer;
     
 }
@@ -84,7 +91,7 @@ h1{
 
     padding: 0.5rem;
     margin-bottom: 1.5rem;
-    border-bottom:4px solid #fff;
+    border-bottom:4px solid black;
 
 }
 
@@ -92,7 +99,7 @@ h1{
 
     background:none;
     outline:none;
-    color:rgb(255, 255, 255);
+    color:black;
     border:none;
     width: 350px;
     font-size: 1.4rem; 
@@ -106,7 +113,7 @@ h1{
     font-family: 'Bebas Neue', cursive;
     background: none;
     outline:none;
-    color:lime;
+    color:orange;
     border:none;
     cursor: pointer;
 
