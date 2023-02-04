@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Learn with Fi</title>
+    <title>Ramadan Diary</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
+
+    <script src="../assets/js/main.js"></script>
 </head>
 
 <body>
@@ -23,6 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Navbar -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
@@ -40,27 +44,30 @@
                     </ul>
                     <div class="gap-3">
                         <a href="login.html" class="btn btn-default btn-no-fill" role="button">Log In</a>
-                        <button class="btn btn-fill text-white">Try Now</button>
+                        <button class="btn btn-fill text-white">Contact Us</button>
                     </div>
                 </div>
             </nav>
         </div>
+
+        <!-- Form Register -->
         <div class="card shadow-lg">
             <div class="card-body p-5">
-                <h1 class="fs-4 card-title fw-bold mb-4">Register as Learner</h1>
+                <h1 class="fs-4 card-title fw-bold mb-4">Register as Member</h1>
                 <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
                     <div class="mb-3">
-                        <label class="mb-2 text-muted" for="email">Name</label>
+                        <label class="mb-2 text-muted" for="name">Name</label>
                         <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
                         <div class="invalid-feedback">
                             Name is invalid
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="mb-2 text-muted" for="email">Email</label>
-                        <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                        <label class="mb-2 text-muted" for="username">Username</label>
+                        <input id="username" type="username" class="form-control" name="username" value="" required
+                            autofocus>
                         <div class="invalid-feedback">
-                            Email is invalid
+                            Username is invalid
                         </div>
                     </div>
 
@@ -90,16 +97,19 @@
                             <input type="checkbox" name="remember" id="remember" class="form-check-input">
                             <label for="remember" class="form-check-label">Remember Me</label>
                         </div>
-                        <a href="./dashboard.html" style="background-color: #27c499;"
+                        <a onclick="register()" style="background-color: #34bcf4;"
                             class="btn btn-fill text-white ms-auto">Register</a>
                     </div>
                 </form>
             </div>
             <div class="card-footer py-3 border-0">
                 <div class="text-center">
-                    Have an account? <a href="login.html" style="color: #27c499 ;">Login Here</a>
+                    Have an account? <a href="login.html" style="color: #34bcf4 ;">Login Here</a>
                 </div>
             </div>
+        </div>
+        <div class="copyright font-red-hat-display">
+            @Copyrightt by 21552011043 Fitria Widyani TIF RM 21UASWEB1
         </div>
     </div>
 
