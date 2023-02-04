@@ -1,0 +1,383 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content a {
+    color: #34bcf4;
+}
+
+content ol {
+    margin: 20px 0px;
+}
+
+.content ol li {
+    margin: 20px 0px;
+}
+
+.content ol li span {
+    font-weight: 600;
+}
+
+.content ul {
+    margin: 20px 0px;
+}
+
+.content ul li {
+    margin: 50px 0px;
+}
+
+ul.smalllineheight li {
+    margin: 10px 0px;
+}
+
+.content b {
+    font-weight: 500;
+}
+
+.content ul li span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.backtoptop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*
+.boxhitam{
+    padding:20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.boxhitamwithoutpadding{
+    padding:0px;
+}
+*/
+.boxputih {
+    background: #ffffff;
+}
+
+
+.title {
+    padding-top: 100px;
+    font-family: Bebas Neue;
+    font-size: 140px;
+    line-height: 120px;
+    text-align: center;
+    color: #000000;
+}
+
+.title2lines {
+    padding-top: 100px;
+    font-family: Bebas Neue;
+    font-size: 140px;
+    line-height: 120px;
+    text-align: center;
+    color: #000000;
+}
+
+.subtext {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #121212;
+    padding: 0px 0px;
+}
+
+.subtext2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: #121212;
+    padding: 0px 0px;
+    margin-bottom: -20px;
+}
+
+.container {
+    max-width: 700px;
+}
+
+
+.divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 40px 0px 40px;
+}
+
+.content {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    color: #323947;
+    padding: 0px 0px;
+    margin: 40px 0px;
+}
+
+
+/* ================   SIDEMENU   ================== */
+
+.headermenuclose {
+    position: fixed;
+    z-index: 999;
+    padding: 10px 10px 10px 20px;
+    width: 280px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: #F9FAFB;
+    background-image: url("learn/gradientsidemenu.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: block;
+}
+
+.headermenuopen {
+    position: fixed;
+    z-index: 999;
+    padding: 10px 10px 10px 20px;
+    width: 280px;
+    display: none;
+}
+
+
+.pageindexs {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.735562px;
+    color: #121212;
+    margin: 48px 0px 48px 0px;
+}
+
+.boxmenu {
+    margin-top: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.boxback {
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.menunumber {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #121212;
+    opacity: 0.3;
+    padding: 4px 0px 0px 0px;
+}
+
+.menunumberback {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #121212;
+    padding: 0px 0px 0px 0px;
+}
+
+.menutextback {
+    font-size: 13px;
+    line-height: 13px;
+    color: #121212;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 4px 0px 0px 10px;
+}
+
+.menutext {
+    font-size: 13px;
+    line-height: 13px;
+    color: #121212;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 1px 0px 0px 10px;
+}
+
+.menuhead {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.navigation {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 280px;
+    overflow-y: scroll;
+    padding: 60px 40px 40px 40px;
+    background: #F9FAFB;
+    background-image: url("learn/gradientsidemenu.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 9;
+    display: block;
+}
+
+.paddingleft {
+    padding-left: 280px;
+}
+
+.nopaddingleft {
+    padding-left: 0px;
+}
+
+.activesubmenu {
+    color: #34bcf4;
+    font-weight: 400;
+}
+
+/* ================   SIDEMENU   ================== */
+
+
+@media only screen and (max-width: 900px) {
+    .labelpage {
+       
+        text-align: left;
+    }
+
+    .labelpage img {
+        max-width: 196px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .labelpage {
+       
+        text-align: left;
+    }
+
+    .labelpage img {
+        max-width: 196px;
+    }
+
+    .labelabsolute {
+        display: none;
+    }
+
+
+
+    .labelnonabsolute {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    .labelnonabsolute img {
+        max-width: 196px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .paddingleft {
+        padding-left: 0px;
+    }
+
+    .navigation {
+        display: none;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        ;
+    }
+
+    .headermenuopen {
+        display: block;
+    }
+
+    .headermenuclose {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title2lines {
+        font-size: 90px;
+        line-height: 80px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .headermenuclose {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .headermenuopen {
+        width: 100%;
+        padding: 20px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .boxback {
+        margin-top: 40px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .title {
+        padding-top: 120px;
+    }
+
+    .title2lines {
+        padding-top: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 90px;
+        line-height: 50px;
+    }
+
+    .subtext {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .container {
+        padding: 0px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .menuhead {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .menutext {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
